@@ -3,12 +3,12 @@ name = "SigmaOS-webapp-manager"
 tier = 3
 stability = "scaffold"
 language = "rust"
-description = "Standalone Progressive Web App (PWA) launcher and sandboxed site isolation wrapper"
+description = "Turn websites into desktop webapps"
 upstream = ["https://github.com/linuxmint/webapp-manager"]
 
 [contract]
 provides = ["webapp-manager", "pwa-launcher", "site-isolation-profile"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
